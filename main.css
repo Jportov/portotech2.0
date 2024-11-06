@@ -1,60 +1,90 @@
+/* Reset de margens e espaçamentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo base */
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
+img {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* Navbar */
 .navbar {
-    background-color:  #00ABE4;
+    background-color: #00ABE4;
 }
+
 #cabecalho .nav .nav-link.active {
     background-color: #E9F1FA;
-    color:  #00ABE4;
+    color: #00ABE4;
 }
-#cabecalho .nav .nav-link, .navbar-brand, .navbar-brand:hover, .nav-servicos .nav-link.active:hover {
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-servicos .nav-link.active:hover {
     color: #fff;
-    font-family: Michroma, sans-serif;
+    font-family: 'Michroma', sans-serif;
 }
+
 .navbar-toggler {
     background-color: #00ABE4;
 }
-.section-title {
-    font-family: Michroma, sans-serif;
+
+/* Seções */
+.section-title,
+#servicos h5,
+.form-label {
+    font-family: 'Michroma', sans-serif;
 }
-#sobre-o-restaurante, #servicos {
+
+#sobre-o-restaurante,
+#servicos {
     background-color: #E9F1FA;
 }
+
 .text-colored {
-    color:  #00ABE4;
+    color: #00ABE4;
 }
+
+/* Navegação */
 .nav-servicos .nav-link.active,
-#fale-conosco button{
-    background-color:  #00ABE4;
+#fale-conosco button {
+    background-color: #00ABE4;
     color: #fff;
-    font-family: Michroma, sans-serif;
+    font-family: 'Michroma', sans-serif;
 }
+
 .nav-servicos .nav-link:hover {
-    color:  #00ABE4;
+    color: #00ABE4;
 }
+
+/* Links e listas */
 .social-links li {
     list-style: none;
-    display: inline;
+    display: inline-block;
 }
+
 .social-links a {
     text-decoration: none;
 }
+
+/* Imagens em carrossel para telas menores */
 @media (max-width: 767px) {
     .carousel-item img {
         height: 280px;
     }
-}.michroma-regular {
-    font-family: "Michroma", sans-serif;
+}
+
+/* Fonte personalizada */
+.michroma-regular {
+    font-family: 'Michroma', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-#servicos h5{
-    font-family: Michroma, sans-serif;
-
-}
-.form-label {
-    font-family: Michroma, sans-serif;
-
-}
-;
